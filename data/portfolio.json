@@ -1,20 +1,90 @@
 {
   "projects": [
     {
-      "title": "Personal Portfolio Website",
-      "description": "A responsive personal portfolio and education website built with Flask, Jinja2 templating, and Bootstrap 5.",
-      "tech_stack": ["Python", "Flask", "Bootstrap 5", "Jinja2"],
-      "github_url": "https://github.com/yourusername/personal-portfolio",
-      "live_url": "https://yourusername.pythonanywhere.com",
-      "image": "images/portfolio.png"
+      "title": "GIS Asset Capture PWA",
+      "institution": "EPA Synoptic Project · The University of Leeds",
+      "description": "An offline-first Progressive Web Application for field engineers to manage distribution network assets.",
+      "bullets": [
+        "Architected an offline-first Progressive Web Application (PWA) for field engineers to manage distribution network assets, leveraging Leaflet.js, Python Flask, SQLAlchemy, and SQLite.",
+        "Engineered a robust Action Queue synchronisation engine using IndexedDB and Service Workers, enabling seamless data entry in zero-connectivity environments with deterministic conflict resolution.",
+        "Transformed the backend architecture from a flat-file system to a structured relational database, implementing comprehensive audit logging and CNAIM-aligned data validation."
+      ],
+      "tech_stack": ["Python", "Flask", "SQLAlchemy", "SQLite", "Leaflet.js", "IndexedDB", "Service Workers", "PWA"],
+      "github_url": "https://github.com/ArchieAbr/EPA.git",
+      "live_url": "",
+      "image": ""
     },
     {
-      "title": "Data Analysis Dashboard",
-      "description": "An interactive dashboard for visualising sales data trends using Python and Plotly.",
-      "tech_stack": ["Python", "Pandas", "Plotly", "Jupyter"],
-      "github_url": "https://github.com/yourusername/data-dashboard",
+      "title": "Leeds Housing Market API",
+      "institution": "The University of Leeds",
+      "description": "A production-ready RESTful API delivering full CRUD operations and market analytics, with an LLM-powered smart search endpoint.",
+      "bullets": [
+        "Engineered a production-ready RESTful API using Python, FastAPI, and PostgreSQL to deliver full CRUD operations and market analytics, deploying the containerised application to Microsoft Azure.",
+        "Integrated Google Gemini to engineer an LLM-powered smart search endpoint, successfully translating complex natural language property queries into dynamically generated, structured database filters."
+      ],
+      "tech_stack": ["Python", "FastAPI", "PostgreSQL", "Docker", "Azure", "Google Gemini API"],
+      "github_url": "https://github.com/ArchieAbr/COMP3011.git",
       "live_url": "",
-      "image": "images/dashboard.png"
+      "image": ""
+    },
+    {
+      "title": "Global Climate Attitudes Data Analysis",
+      "institution": "The University of Leeds",
+      "description": "An unsupervised machine learning pipeline performing PCA and K-means clustering on the UNDP People's Climate Vote 2024 dataset.",
+      "bullets": [
+        "Engineered an unsupervised machine learning pipeline in Python (pandas, scikit-learn) to perform Principal Component Analysis (PCA) and K-means clustering on the UNDP People's Climate Vote 2024 dataset.",
+        "Constructed a data-driven typology of countries based on aggregated climate attitudes, identifying critical predictors for climate policy support across varying global regions.",
+        "Authored the comprehensive clustering methodology and results analysis for the final academic report, translating multidimensional data visualisations into clear, actionable insights."
+      ],
+      "tech_stack": ["Python", "pandas", "scikit-learn", "PCA", "K-means"],
+      "github_url": "",
+      "live_url": "",
+      "image": ""
+    },
+    {
+      "title": "Performance Evaluation of Kubernetes for Cloud and Edge Computing",
+      "institution": "The University of Leeds",
+      "description": "Evaluation framework designed to benchmark containerised telecommunications workloads across simulated cloud (Minikube) and edge (K3s) environments. The project involved deploying NGINX Virtual Network Functions, engineering a custom asynchronous Python workload generator, and synthesising complex telemetry data into actionable performance visualisations.",
+      "bullets": [
+        "Provisioned and configured simulated central data centre (Minikube) and resource-constrained edge (K3s) Kubernetes clusters on Ubuntu Server 24.04 LTS to benchmark containerised telecommunications workloads.",
+        "Authored declarative YAML manifests to deploy an NGINX Layer 7 load balancer Virtual Network Function (VNF) and lightweight backend pods, establishing a baseline testing topology across both environments.",
+        "Engineered a custom asynchronous workload generator in Python, utilising the aiohttp library to simulate high-concurrency, sustained HTTP traffic against the edge load balancer.",
+        "Implemented automated telemetry collection to capture and log precise performance metrics—including total throughput (requests per second), average latency, and 95th percentile latency—synthesising the results into CSV pipelines for rigorous comparative analysis."
+      ],
+      "tech_stack": ["Python", "YAML", "Kubernetes", "k3s", "Minikube", "NGINX", "Ubuntu Server", "aiohttp", "iperf3", "wrk", "Grafana", "Prometheus", "Pandas", "Matplotlib", "CSV Data Pipelines"],
+      "github_url": "https://github.com/ArchieAbr/k8s-telecom-eval.git",
+      "live_url": "",
+      "image": ""
+    },
+    {
+      "title": "Housing Project API",
+      "institution": "The University of Leeds",
+      "description": "Architected a robust RESTful API using FastAPI to serve predictive machine learning models and housing market analytics for the Leeds area. Implemented secure JWT authentication, SQLAlchemy for PostgreSQL database management, and Alembic for automated schema migrations. Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions to establish a reliable continuous integration pipeline, whilst rigorously evaluating system throughput and stability using Pytest and Locust.",
+      "bullets": [
+        "Architected a robust RESTful API using FastAPI to serve predictive machine learning models and housing market analytics for the Leeds area, adhering to strict REST principles.",
+        "Engineered a secure backend infrastructure incorporating PostgreSQL and SQLAlchemy, employing Alembic for automated schema migrations and implementing robust OAuth2 with JWT authentication.",
+        "Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions, establishing a reliable continuous integration and continuous deployment (CI/CD) pipeline.",
+        "Rigorously evaluated system throughput, latency, and stability by designing and executing comprehensive load testing scenarios with Locust alongside automated unit tests via Pytest."   
+    ],
+      "tech_stack": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "scikit-learn", "JWT", "Pytest", "Locust", "Docker", "GitHub Actions", "Azure App Services"],
+      "github_url": "https://github.com/ArchieAbr/housing_project_api.git",
+      "live_url": "",
+      "image": ""
+    },
+     {
+      "title": "Web Search Engine Project",
+      "institution": "The University of Leeds",
+      "description": "Engineered a custom command-line web search engine in Python, featuring a bespoke web crawler, a persistent SQLite inverted index, and advanced TF-IDF ranking algorithms. The project included comprehensive performance benchmarking using Jupyter Notebooks and robust automated testing via Pytest and continuous integration with GitHub Actions.",
+      "bullets": [
+        "Designed and implemented a custom command-line web search engine in Python, engineering a bespoke web crawler with requests and BeautifulSoup to systematically harvest and process online data.",
+        "Architected a persistent, high-performance inverted index leveraging SQLite, optimising the storage and retrieval of complex document metadata and search terms.",
+        "Developed and integrated an advanced search ranking algorithm utilising Term Frequency-Inverse Document Frequency (TF-IDF) alongside exact phrase matching capabilities to deliver highly relevant search results.",
+        "Rigorously evaluated indexing latency and query performance through visual benchmarking in Jupyter Notebooks, whilst ensuring system reliability via comprehensive automated unit testing with Pytest and continuous integration pipelines via GitHub Actions."   
+    ],
+      "tech_stack": ["Python", "SQLite", "Pytest", "requests", "BeautifulSoup", "TF-IDF", "Pytest", "GitHub Actions", "Jupyter Notebooks", "Matplotlib"],
+      "github_url": "https://github.com/ArchieAbr/COMP3011_CwK_2.git",
+      "live_url": "",
+      "image": ""
     }
   ],
   "education": [
@@ -41,6 +111,71 @@
       "start_year": 2015,
       "end_year": 2020,
       "description": "Achieved 9,9,8,8,8,7,7,6,6,6. Deputy Head Boy, A-Team Rugby Player, Rosslyn Park National Schools Rugby Sevens, Athletics Captain, Debate Club, Wind Band, Barclays Digital Technology Innovation Award (Project Manager - winning best use of technology)."
+    }
+  ],
+  "experience": [
+    {
+      "company": "PwC UK",
+      "location": "Leeds, England",
+      "overall_title": "Technology Degree Apprentice",
+      "overall_dates": "September 2022 – Present",
+      "highlight": "Finalist for the MCA Apprentice of the Year, recognised for exceeding expectations and demonstrating technical and commercial excellence across two of PwC's largest transformation engagements.",
+      "roles": [
+        {
+          "title": "Law Firm Advisory Analyst",
+          "dates": "July 2025 – August 2025",
+          "bullets": [
+            "Conducted comprehensive industry benchmarking and data analysis across multiple legal functions.",
+            "Aggregated data from diverse sources to perform comparative analyses, presenting strategic findings directly to senior leadership, including C-Suite executives."
+          ]
+        },
+        {
+          "title": "Business Analyst",
+          "dates": "November 2024 – April 2025",
+          "bullets": [
+            "Facilitated cross-functional client workshops.",
+            "Authored and owned features, user stories and acceptance criteria using Agile methodologies, successfully passing them through rigorous requirements refinement.",
+            "Engineered, edited and standardised business process maps to seamlessly embed new processes and address critical client pain points."
+          ]
+        },
+        {
+          "title": "Project Delivery Analyst",
+          "dates": "June 2024 – November 2024",
+          "bullets": [
+            "Implemented Microsoft Project to capture and track complex project dependencies, presenting strategic updates directly to the programme board.",
+            "Architected and automated reporting solutions using Azure DevOps and Power BI, significantly enhancing visibility for senior stakeholders."
+          ]
+        },
+        {
+          "title": "PMO Analyst",
+          "dates": "April 2025 – June 2025 & June 2023 – August 2023",
+          "bullets": [
+            "Undertook foundational PMO responsibilities, ensuring the smooth tracking and delivery of project-related activities."
+          ]
+        }
+      ]
+    }
+  ],
+  "competencies": [
+    {
+      "category": "Business Analyst",
+      "icon": "bi-briefcase",
+      "skills": ["Agile Methodologies", "Requirements Gathering", "Process Mapping", "Feature & User Story Writing", "Industry Benchmarking", "Excel"]
+    },
+    {
+      "category": "Computer Science & Development",
+      "icon": "bi-code-slash",
+      "skills": ["Python", "JavaScript", "SQL", "Flask", "Django", "Object-Oriented Programming", "Procedural Programming", "Numerical Computation", "Generative/Agentic AI", "RESTful API Programming", "Linux", "Azure", "Virtual Machines", "Git", "Data Science"]
+    },
+    {
+      "category": "Project Delivery",
+      "icon": "bi-kanban",
+      "skills": ["PMO Operations", "Dependency Tracking", "Stakeholder Management", "Programme Board Reporting", "Dashboard Creation"]
+    },
+    {
+      "category": "Software & Tools",
+      "icon": "bi-tools",
+      "skills": ["Microsoft Office 365", "Azure DevOps", "Azure Container Registry", "Azure App Services", "Application Insights", "PostgreSQL", "MySQL", "SQLite", "Visual Studio Code", "PyCharm", "WebStorm", "CLion", "GitHub", "Google Gemini API", "Power BI", "Microsoft Project", "Docker", "VirtualBox", "Kubernetes", "CLI"]
     }
   ]
 }

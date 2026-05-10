@@ -25,7 +25,21 @@ content %}
 
         <div class="card-body">
           <h5 class="card-title fw-semibold">{{ project.title }}</h5>
-          <p class="card-text text-muted small">{{ project.description }}</p>
+          {% if project.institution %}
+          <p class="text-muted small fst-italic mb-2">
+            {{ project.institution }}
+          </p>
+          {% endif %} {% if project.description %}
+          <p class="card-text text-muted small mb-2">
+            {{ project.description }}
+          </p>
+          {% endif %} {% if project.bullets %}
+          <ul class="small text-muted ps-3 mb-0">
+            {% for bullet in project.bullets %}
+            <li class="mb-1">{{ bullet }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
         </div>
 
         <!-- Tech badges + action links in footer -->

@@ -16,8 +16,13 @@ def load_data() -> dict:
 
 @app.route("/")
 def index():
-    """Renders the home/about page."""
-    return render_template("index.html")
+    """Renders the home/about page with experience and competency data."""
+    data = load_data()
+    return render_template(
+        "index.html",
+        experience=data["experience"],
+        competencies=data["competencies"],
+    )
 
 
 @app.route("/portfolio")

@@ -71,3 +71,10 @@ main {
   letter-spacing: 0.08em;
   font-size: 0.85rem;
 }
+
+/* Award/highlight banner on professional experience section */
+.highlight-banner {
+  background-color: rgba(37, 99, 235, 0.07);
+  border-left: 4px solid var(--bs-primary);
+  border-radius: 0.375rem;
+}
