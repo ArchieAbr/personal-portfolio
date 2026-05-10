@@ -53,7 +53,7 @@
       ],
       "tech_stack": ["Python", "YAML", "Kubernetes", "k3s", "Minikube", "NGINX", "Ubuntu Server", "aiohttp", "iperf3", "wrk", "Grafana", "Prometheus", "Pandas", "Matplotlib", "CSV Data Pipelines"],
       "github_url": "https://github.com/ArchieAbr/k8s-telecom-eval.git",
-      "live_url": "",
+      "live_url": "https://youtu.be/hYRM5-sr_mk",
       "image": ""
     },
     {
