@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "GIS Asset Capture PWA",
-      "institution": "EPA Synoptic Project · The University of Leeds",
+      "institution": "EPA Synoptic Project · University of Leeds",
       "description": "An offline-first Progressive Web Application for field engineers to manage distribution network assets.",
       "bullets": [
         "Architected an offline-first Progressive Web Application (PWA) for field engineers to manage distribution network assets, leveraging Leaflet.js, Python Flask, SQLAlchemy, and SQLite.",
@@ -11,12 +11,12 @@
       ],
       "tech_stack": ["Python", "Flask", "SQLAlchemy", "SQLite", "Leaflet.js", "IndexedDB", "Service Workers", "PWA"],
       "github_url": "https://github.com/ArchieAbr/EPA.git",
-      "live_url": "",
+      "live_url": "https://youtu.be/8Ufddl6mpas",
       "image": ""
     },
     {
       "title": "Leeds Housing Market API",
-      "institution": "The University of Leeds",
+      "institution": "University of Leeds",
       "description": "A production-ready RESTful API delivering full CRUD operations and market analytics, with an LLM-powered smart search endpoint.",
       "bullets": [
         "Engineered a production-ready RESTful API using Python, FastAPI, and PostgreSQL to deliver full CRUD operations and market analytics, deploying the containerised application to Microsoft Azure.",
@@ -29,7 +29,7 @@
     },
     {
       "title": "Global Climate Attitudes Data Analysis",
-      "institution": "The University of Leeds",
+      "institution": "University of Leeds",
       "description": "An unsupervised machine learning pipeline performing PCA and K-means clustering on the UNDP People's Climate Vote 2024 dataset.",
       "bullets": [
         "Engineered an unsupervised machine learning pipeline in Python (pandas, scikit-learn) to perform Principal Component Analysis (PCA) and K-means clustering on the UNDP People's Climate Vote 2024 dataset.",
@@ -43,7 +43,7 @@
     },
     {
       "title": "Performance Evaluation of Kubernetes for Cloud and Edge Computing",
-      "institution": "The University of Leeds",
+      "institution": "University of Leeds",
       "description": "Evaluation framework designed to benchmark containerised telecommunications workloads across simulated cloud (Minikube) and edge (K3s) environments. The project involved deploying NGINX Virtual Network Functions, engineering a custom asynchronous Python workload generator, and synthesising complex telemetry data into actionable performance visualisations.",
       "bullets": [
         "Provisioned and configured simulated central data centre (Minikube) and resource-constrained edge (K3s) Kubernetes clusters on Ubuntu Server 24.04 LTS to benchmark containerised telecommunications workloads.",
@@ -51,20 +51,20 @@
         "Engineered a custom asynchronous workload generator in Python, utilising the aiohttp library to simulate high-concurrency, sustained HTTP traffic against the edge load balancer.",
         "Implemented automated telemetry collection to capture and log precise performance metrics—including total throughput (requests per second), average latency, and 95th percentile latency—synthesising the results into CSV pipelines for rigorous comparative analysis."
       ],
-      "tech_stack": ["Python", "YAML", "Kubernetes", "k3s", "Minikube", "NGINX", "Ubuntu Server", "aiohttp", "iperf3", "wrk", "Grafana", "Prometheus", "Pandas", "Matplotlib", "CSV Data Pipelines"],
+      "tech_stack": ["Python", "Docker", "YAML", "Kubernetes", "k3s", "Minikube", "NGINX", "Ubuntu Server", "aiohttp", "iperf3", "wrk", "Grafana", "Prometheus", "Pandas", "Matplotlib", "CSV Data Pipelines"],
       "github_url": "https://github.com/ArchieAbr/k8s-telecom-eval.git",
       "live_url": "https://youtu.be/hYRM5-sr_mk",
       "image": ""
     },
     {
       "title": "Housing Project API",
-      "institution": "The University of Leeds",
+      "institution": "University of Leeds",
       "description": "Architected a robust RESTful API using FastAPI to serve predictive machine learning models and housing market analytics for the Leeds area. Implemented secure JWT authentication, SQLAlchemy for PostgreSQL database management, and Alembic for automated schema migrations. Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions to establish a reliable continuous integration pipeline, whilst rigorously evaluating system throughput and stability using Pytest and Locust.",
       "bullets": [
         "Architected a robust RESTful API using FastAPI to serve predictive machine learning models and housing market analytics for the Leeds area, adhering to strict REST principles.",
         "Engineered a secure backend infrastructure incorporating PostgreSQL and SQLAlchemy, employing Alembic for automated schema migrations and implementing robust OAuth2 with JWT authentication.",
         "Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions, establishing a reliable continuous integration and continuous deployment (CI/CD) pipeline.",
-        "Rigorously evaluated system throughput, latency, and stability by designing and executing comprehensive load testing scenarios with Locust alongside automated unit tests via Pytest."   
+        "Rigorously evaluated system throughput, latency, and stability by designing and executing comprehensive load testing scenarios with Locust alongside automated unit tests via Pytest."
     ],
       "tech_stack": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "scikit-learn", "JWT", "Pytest", "Locust", "Docker", "GitHub Actions", "Azure App Services"],
       "github_url": "https://github.com/ArchieAbr/housing_project_api.git",
@@ -73,17 +73,17 @@
     },
      {
       "title": "Web Search Engine Project",
-      "institution": "The University of Leeds",
+      "institution": "University of Leeds",
       "description": "Engineered a custom command-line web search engine in Python, featuring a bespoke web crawler, a persistent SQLite inverted index, and advanced TF-IDF ranking algorithms. The project included comprehensive performance benchmarking using Jupyter Notebooks and robust automated testing via Pytest and continuous integration with GitHub Actions.",
       "bullets": [
         "Designed and implemented a custom command-line web search engine in Python, engineering a bespoke web crawler with requests and BeautifulSoup to systematically harvest and process online data.",
         "Architected a persistent, high-performance inverted index leveraging SQLite, optimising the storage and retrieval of complex document metadata and search terms.",
         "Developed and integrated an advanced search ranking algorithm utilising Term Frequency-Inverse Document Frequency (TF-IDF) alongside exact phrase matching capabilities to deliver highly relevant search results.",
-        "Rigorously evaluated indexing latency and query performance through visual benchmarking in Jupyter Notebooks, whilst ensuring system reliability via comprehensive automated unit testing with Pytest and continuous integration pipelines via GitHub Actions."   
+        "Rigorously evaluated indexing latency and query performance through visual benchmarking in Jupyter Notebooks, whilst ensuring system reliability via comprehensive automated unit testing with Pytest and continuous integration pipelines via GitHub Actions."
     ],
       "tech_stack": ["Python", "SQLite", "Pytest", "requests", "BeautifulSoup", "TF-IDF", "Pytest", "GitHub Actions", "Jupyter Notebooks", "Matplotlib"],
       "github_url": "https://github.com/ArchieAbr/COMP3011_CwK_2.git",
-      "live_url": "",
+      "live_url": "https://youtu.be/QkTRlc9EEPI",
       "image": ""
     }
   ],
