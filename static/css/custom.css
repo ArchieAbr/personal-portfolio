@@ -1,5 +1,17 @@
-/* Minimal custom overrides — Bootstrap handles the rest */
+/* ---------------------------------------------------------------
+   Custom overrides — Bootstrap utility classes handle everything
+   else; only add rules here when Bootstrap cannot.
+--------------------------------------------------------------- */
 
+/* Accent colour — a richer blue that flows through the whole UI */
+:root {
+  --bs-primary:       #2563eb;
+  --bs-primary-rgb:   37, 99, 235;
+  --bs-link-color:    #2563eb;
+  --bs-link-hover-color: #1d4ed8;
+}
+
+/* Full-height flex body so footer is always pinned to the bottom */
 body {
   min-height: 100vh;
   display: flex;
@@ -10,11 +22,52 @@ main {
   flex: 1;
 }
 
-/* Card hover lift */
+/* Hero section minimum height (Bootstrap has no min-vh-75 utility) */
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+/* Hero profile image max-width */
+.hero-img {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* Card hover lift — transform not achievable via Bootstrap utilities */
 .card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Education timeline: primary left border accent */
+.timeline-card {
+  border-left: 4px solid var(--bs-primary) !important;
+}
+
+/* Soft pill badge backgrounds for tech stack and dates */
+.tech-badge {
+  background-color: rgba(37, 99, 235, 0.1);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.date-badge {
+  background-color: rgba(37, 99, 235, 0.1);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Active nav link highlight (JS in main.js adds .active) */
+.navbar-nav .nav-link.active {
+  color: var(--bs-primary) !important;
+  font-weight: 600;
+}
+
+/* Spaced uppercase label text (used on hero subtitle) */
+.ls-1 {
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
 }

@@ -1,48 +1,46 @@
-{% extends "base.html" %} {% block title %}About{% endblock %} {% block content
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
-<div class="row align-items-center g-5">
-  <!-- Profile photo -->
-  <div class="col-md-4 text-center">
-    <img
-      src="{{ url_for('static', filename='images/profile.jpg') }}"
-      alt="Profile photo"
-      class="img-fluid rounded-circle shadow"
-      style="max-width: 240px"
-      onerror="this.style.display = 'none'"
-    />
-  </div>
+<!-- Hero section -->
+<section class="container min-vh-75 d-flex align-items-center">
+  <div class="row align-items-center g-5 w-100">
+    <!-- Left: headline, summary, CTAs -->
+    <div class="col-lg-6 order-2 order-lg-1">
+      <p class="text-primary fw-semibold text-uppercase ls-1 mb-2">
+        Technology Consultant &amp; CS Graduate
+      </p>
+      <h1 class="display-4 fw-bold lh-sm mb-3">Hi, I'm<br />Archie Abraham</h1>
+      <p class="lead text-muted mb-4">
+        I build clean, well-engineered solutions with a strong interest in data
+        analysis, automation, and web development. Currently open to new
+        opportunities.
+      </p>
+      <div class="d-flex flex-wrap gap-3">
+        <a
+          href="{{ url_for('portfolio') }}"
+          class="btn btn-primary btn-lg px-4"
+        >
+          View My Work
+        </a>
+        <a
+          href="https://github.com/ArchieAbr"
+          class="btn btn-outline-secondary btn-lg px-4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github me-2"></i>GitHub
+        </a>
+      </div>
+    </div>
 
-  <!-- About text -->
-  <div class="col-md-8">
-    <h1 class="display-5 fw-bold">Hi, I'm Archie Abraham</h1>
-    <p class="lead text-muted">
-      Technology Consultant &amp; Computer Science Graduate
-    </p>
-    <hr />
-    <p>
-      Welcome to my portfolio.
-    </p>
-    <p>
-      Feel free to explore my
-      <a href="{{ url_for('portfolio') }}">projects</a> or read about my
-      <a href="{{ url_for('education') }}">education background</a>.
-    </p>
-    <a
-      href="https://github.com/ArchieAbr"
-      class="btn btn-dark me-2"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="bi bi-github me-1"></i>GitHub
-    </a>
-    <a
-      href="https://www.linkedin.com/in/archie-abraham-067546252"
-      class="btn btn-primary"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="bi bi-linkedin me-1"></i>LinkedIn
-    </a>
+    <!-- Right: profile photo -->
+    <div class="col-lg-6 order-1 order-lg-2 text-center">
+      <img
+        src="{{ url_for('static', filename='images/profile.jpg') }}"
+        alt="Profile photo of Archie Abraham"
+        class="img-fluid rounded-circle shadow hero-img"
+        onerror="this.style.display = 'none'"
+      />
+    </div>
   </div>
-</div>
+</section>
 {% endblock %}
