@@ -8,3 +8,20 @@
     }
   });
 })();
+
+// Navbar toggle — works with Bootstrap JS when available, falls back to
+// vanilla JS when the CDN bundle fails to load (e.g. on mobile networks).
+(function () {
+  const toggler = document.querySelector(".navbar-toggler");
+  const menu = document.getElementById("navbarNav");
+  if (!toggler || !menu) return;
+
+  toggler.addEventListener("click", function () {
+    // Bootstrap JS handles this via data-bs-* attributes when loaded;
+    // only take over when the bootstrap global is absent.
+    if (typeof bootstrap !== "undefined") return;
+    const isOpen = menu.classList.contains("show");
+    menu.classList.toggle("show", !isOpen);
+    toggler.setAttribute("aria-expanded", String(!isOpen));
+  });
+})();
