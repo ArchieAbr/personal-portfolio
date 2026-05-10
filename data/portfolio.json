@@ -99,18 +99,18 @@
     {
       "institution": "The King's School in Macclesfield",
       "degree": "A-Levels",
-      "field": "Computer Science, Biology, Geography, Global Perspectives (GCSE - A*)",
+      "field": "Computer Science, Biology, Geography",
       "start_year": 2020,
       "end_year": 2022,
-      "description": "Achieved A,B,B. First XV rugby team, Athletics Captain, Sixth-Form Prefect for Sport, Biology Olympiad participant (Highly Commended)."
+      "description": "Achieved A, B, B. First XV rugby team, Athletics Captain, Sixth-Form Prefect for Sport, Biology Olympiad participant (Highly Commended)."
     },
     {
       "institution": "The King's School in Macclesfield",
       "degree": "GCSEs",
-      "field": "English Language, English Literature, Computer Science, Biology, Physical Education, Chemistry, Geography, Mathematics, German, Physics",
+      "field": "English Language, English Literature, Computer Science, Biology, Physical Education, Chemistry, Geography, Mathematics, German, Physics, Global Perspectives",
       "start_year": 2015,
       "end_year": 2020,
-      "description": "Achieved 9,9,8,8,8,7,7,6,6,6. Deputy Head Boy, A-Team Rugby Player, Rosslyn Park National Schools Rugby Sevens, Athletics Captain, Debate Club, Wind Band, Barclays Digital Technology Innovation Award (Project Manager - winning best use of technology)."
+      "description": "Achieved 9, 9, 8, 8, 8, 7, 7, 6, 6, 6, A*. Deputy Head Boy, A-Team Rugby Player, Rosslyn Park National Schools Rugby Sevens, Athletics Captain, Debate Club, Wind Band, Barclays Digital Technology Innovation Award (Project Manager - winning best use of technology)."
     }
   ],
   "experience": [

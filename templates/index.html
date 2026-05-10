@@ -40,10 +40,9 @@
     <!-- Right: profile photo -->
     <div class="col-lg-6 order-1 order-lg-2 text-center">
       <img
-        src="{{ url_for('static', filename='images/profile.jpg') }}"
+        src="{{ url_for('static', filename='images/Archie_Abraham_0481_crop.jpg') }}"
         alt="Profile photo of Archie Abraham"
         class="img-fluid rounded-circle shadow hero-img"
-        onerror="this.style.display = 'none'"
       />
     </div>
   </div>
@@ -54,10 +53,6 @@
   <div class="container">
     <div class="mb-5">
       <h2 class="fw-bold">Professional Experience</h2>
-      <p class="text-muted">
-        Industry experience gained during my Technology Degree Apprenticeship at
-        PwC UK.
-      </p>
     </div>
 
     {% for employer in experience %}
@@ -73,7 +68,17 @@
     {% if employer.highlight %}
     <div class="highlight-banner d-flex align-items-start gap-2 p-3 mb-4">
       <i class="bi bi-trophy-fill text-primary flex-shrink-0 mt-1"></i>
-      <p class="mb-0 small">{{ employer.highlight }}</p>
+      <div>
+        <p class="mb-2 small">{{ employer.highlight }}</p>
+        <a
+          href="https://www.mca.org.uk/awards/finalists-2025/individuals-2025/archie-abraham-pwc"
+          class="btn btn-sm btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read More <i class="bi bi-box-arrow-up-right ms-1"></i>
+        </a>
+      </div>
     </div>
     {% endif %} {% for role in employer.roles %}
     <div class="card border-0 shadow-sm mb-3 timeline-card">
@@ -95,41 +100,6 @@
       </div>
     </div>
     {% endfor %} {% endfor %}
-  </div>
-</section>
-
-<!-- Core Competencies section -->
-<section class="py-5">
-  <div class="container">
-    <div class="mb-5">
-      <h2 class="fw-bold">Core Competencies</h2>
-      <p class="text-muted">
-        Key skills and tools across business analysis, development, and project
-        delivery.
-      </p>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      {% for cat in competencies %}
-      <div class="col">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-white border-bottom py-3 px-4">
-            <h6 class="fw-bold mb-0">
-              <i class="bi {{ cat.icon }} text-primary me-2"></i>{{ cat.category
-              }}
-            </h6>
-          </div>
-          <div class="card-body px-4 py-3">
-            {% for skill in cat.skills %}
-            <span class="badge rounded-pill tech-badge me-1 mb-2"
-              >{{ skill }}</span
-            >
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
   </div>
 </section>
 {% endblock %}
