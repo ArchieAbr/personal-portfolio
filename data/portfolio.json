@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "title": "Personal Portfolio Website",
+      "description": "A responsive personal portfolio and education website built with Flask, Jinja2 templating, and Bootstrap 5.",
+      "tech_stack": ["Python", "Flask", "Bootstrap 5", "Jinja2"],
+      "github_url": "https://github.com/yourusername/personal-portfolio",
+      "live_url": "https://yourusername.pythonanywhere.com",
+      "image": "images/portfolio.png"
+    },
+    {
+      "title": "Data Analysis Dashboard",
+      "description": "An interactive dashboard for visualising sales data trends using Python and Plotly.",
+      "tech_stack": ["Python", "Pandas", "Plotly", "Jupyter"],
+      "github_url": "https://github.com/yourusername/data-dashboard",
+      "live_url": "",
+      "image": "images/dashboard.png"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Leeds",
+      "degree": "Bachelor of Science",
+      "field": "Engineering and Technology (Digital and Technology Solutions Profession)",
+      "start_year": 2022,
+      "end_year": 2026,
+      "description": "Technology Degree Apprenticeship, combining academic study with practical work experience in Technology Consulting at PwC. Expected to graduate with a 2:1 or higher."
+    },
+    {
+      "institution": "The King's School in Macclesfield",
+      "degree": "A-Levels",
+      "field": "Computer Science, Biology, Geography",
+      "start_year": 2020,
+      "end_year": 2022,
+      "description": "Achieved ABB. Deputy Head Boy (Senior Division), First XV rugby team, Athletics Captain, Sixth-Form Prefect for Sport, Biology Olympiad participant (Highly Commended), Barclays Digital Technology Innovation Award (Project Manager - winning best use of technology)."
+    }
+  ]
+}

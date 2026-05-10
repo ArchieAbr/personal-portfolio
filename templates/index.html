@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block title %}About{% endblock %} {% block content
+%}
+<div class="row align-items-center g-5">
+  <!-- Profile photo -->
+  <div class="col-md-4 text-center">
+    <img
+      src="{{ url_for('static', filename='images/profile.jpg') }}"
+      alt="Profile photo"
+      class="img-fluid rounded-circle shadow"
+      style="max-width: 240px"
+      onerror="this.style.display = 'none'"
+    />
+  </div>
+
+  <!-- About text -->
+  <div class="col-md-8">
+    <h1 class="display-5 fw-bold">Hi, I'm Archie Abraham</h1>
+    <p class="lead text-muted">
+      Technology Consultant &amp; Computer Science Graduate
+    </p>
+    <hr />
+    <p>
+      Welcome to my portfolio.
+    </p>
+    <p>
+      Feel free to explore my
+      <a href="{{ url_for('portfolio') }}">projects</a> or read about my
+      <a href="{{ url_for('education') }}">education background</a>.
+    </p>
+    <a
+      href="https://github.com/ArchieAbr"
+      class="btn btn-dark me-2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bi bi-github me-1"></i>GitHub
+    </a>
+    <a
+      href="https://www.linkedin.com/in/archie-abraham-067546252"
+      class="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bi bi-linkedin me-1"></i>LinkedIn
+    </a>
+  </div>
+</div>
+{% endblock %}
