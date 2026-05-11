@@ -1,6 +1,6 @@
 # Personal Portfolio & Education Website
 
-A personal portfolio and education website for Archie Abraham, built with Python and Flask. Displays professional experience, academic background, core competencies, and key projects. Content is managed via a JSON data file, making it straightforward to update without modifying HTML.
+A personal portfolio and education website, built with Python and Flask. Displays professional experience, academic background, core competencies, and key projects. Content is managed via a JSON data file, making it straightforward to update without modifying HTML.
 
 ## Third-Party Libraries & Tools
 
