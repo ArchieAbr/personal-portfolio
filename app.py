@@ -45,6 +45,13 @@ def contact():
     return render_template("contact.html")
 
 
+@app.route("/hobbies")
+def hobbies():
+    """Renders the hobbies page with personal interests and activities."""
+    data = load_data()
+    return render_template("hobbies.html", hobbies=data["hobbies"])
+
+
 if __name__ == "__main__":
     # Development server only — use wsgi.py for production
     app.run(debug=True)

@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block title %}Hobbies{% endblock %} {% block
+content %}
+<div class="container">
+  <!-- Centred section heading -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Hobbies & Interests</h1>
+    <p class="lead text-muted">
+      Outside of work and studies, here's what I enjoy.
+    </p>
+  </div>
+
+  <!-- Hobbies grid -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for hobby in hobbies %}
+    <div class="col">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <span class="fs-2 text-primary"
+              ><i class="{{ hobby.icon }}"></i
+            ></span>
+            <h5 class="card-title fw-bold mb-0">{{ hobby.category }}</h5>
+          </div>
+          <ul class="mb-0 ps-3">
+            {% for activity in hobby.activities %}
+            <li class="mb-1">{{ activity }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <div class="col">
+      <p class="text-muted text-center">
+        No hobbies found. Add entries to <code>data/portfolio.json</code>.
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
