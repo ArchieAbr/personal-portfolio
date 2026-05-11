@@ -15,26 +15,28 @@
       "image": ""
     },
     {
-      "title": "Leeds Housing Market API",
+      "title": "Housing Market API",
       "institution": "University of Leeds",
       "description": "A production-ready RESTful API delivering full CRUD operations and market analytics, with an LLM-powered smart search endpoint.",
       "bullets": [
         "Engineered a production-ready RESTful API using Python, FastAPI, and PostgreSQL to deliver full CRUD operations and market analytics, deploying the containerised application to Microsoft Azure.",
-        "Integrated Google Gemini to engineer an LLM-powered smart search endpoint, successfully translating complex natural language property queries into dynamically generated, structured database filters."
+        "Integrated Google Gemini to engineer an LLM-powered smart search endpoint, successfully translating complex natural language property queries into dynamically generated, structured database filters.",
+        "Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions, establishing a reliable continuous integration and continuous deployment (CI/CD) pipeline.",
+        "Rigorously evaluated system throughput, latency, and stability by designing and executing comprehensive load testing scenarios with Locust alongside automated unit tests via Pytest."
       ],
-      "tech_stack": ["Python", "FastAPI", "PostgreSQL", "Docker", "Azure", "Google Gemini API"],
+      "tech_stack": ["Python", "Google Gemini API", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "scikit-learn", "JWT", "Pytest", "Locust", "Docker", "GitHub Actions", "Azure App Services"],
       "github_url": "https://github.com/ArchieAbr/COMP3011.git",
       "live_url": "",
       "image": ""
     },
     {
-      "title": "Global Climate Attitudes Data Analysis",
+      "title": "Global Climate Attitudes Exploratory Data Analysis",
       "institution": "University of Leeds",
       "description": "An unsupervised machine learning pipeline performing PCA and K-means clustering on the UNDP People's Climate Vote 2024 dataset.",
       "bullets": [
         "Engineered an unsupervised machine learning pipeline in Python (pandas, scikit-learn) to perform Principal Component Analysis (PCA) and K-means clustering on the UNDP People's Climate Vote 2024 dataset.",
         "Constructed a data-driven typology of countries based on aggregated climate attitudes, identifying critical predictors for climate policy support across varying global regions.",
-        "Authored the comprehensive clustering methodology and results analysis for the final academic report, translating multidimensional data visualisations into clear, actionable insights."
+        "Authored the comprehensive clustering methodology and results analysis for the final EDA report, translating multidimensional data visualisations into clear insights and trend visualisations."
       ],
       "tech_stack": ["Python", "pandas", "scikit-learn", "PCA", "K-means"],
       "github_url": "",
@@ -57,21 +59,6 @@
       "image": ""
     },
     {
-      "title": "Housing Project API",
-      "institution": "University of Leeds",
-      "description": "Architected a robust RESTful API using FastAPI to serve predictive machine learning models and housing market analytics for the Leeds area. Implemented secure JWT authentication, SQLAlchemy for PostgreSQL database management, and Alembic for automated schema migrations. Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions to establish a reliable continuous integration pipeline, whilst rigorously evaluating system throughput and stability using Pytest and Locust.",
-      "bullets": [
-        "Architected a robust RESTful API using FastAPI to serve predictive machine learning models and housing market analytics for the Leeds area, adhering to strict REST principles.",
-        "Engineered a secure backend infrastructure incorporating PostgreSQL and SQLAlchemy, employing Alembic for automated schema migrations and implementing robust OAuth2 with JWT authentication.",
-        "Orchestrated containerised deployments to Azure App Services using Docker and GitHub Actions, establishing a reliable continuous integration and continuous deployment (CI/CD) pipeline.",
-        "Rigorously evaluated system throughput, latency, and stability by designing and executing comprehensive load testing scenarios with Locust alongside automated unit tests via Pytest."
-    ],
-      "tech_stack": ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "scikit-learn", "JWT", "Pytest", "Locust", "Docker", "GitHub Actions", "Azure App Services"],
-      "github_url": "https://github.com/ArchieAbr/housing_project_api.git",
-      "live_url": "",
-      "image": ""
-    },
-     {
       "title": "Web Search Engine Project",
       "institution": "University of Leeds",
       "description": "Engineered a custom command-line web search engine in Python, featuring a bespoke web crawler, a persistent SQLite inverted index, and advanced TF-IDF ranking algorithms. The project included comprehensive performance benchmarking using Jupyter Notebooks and robust automated testing via Pytest and continuous integration with GitHub Actions.",
@@ -84,6 +71,104 @@
       "tech_stack": ["Python", "SQLite", "Pytest", "requests", "BeautifulSoup", "TF-IDF", "Pytest", "GitHub Actions", "Jupyter Notebooks", "Matplotlib"],
       "github_url": "https://github.com/ArchieAbr/COMP3011_CwK_2.git",
       "live_url": "https://youtu.be/QkTRlc9EEPI",
+      "image": ""
+    },
+    {
+      "title": "Intelligent Film Recommender",
+      "institution": "Personal Project",
+      "description": "A user-adaptive command-line application that delivers personalised film recommendations by learning from viewing preferences through multi-dimensional scoring.",
+      "bullets": [
+        "Engineered a command-line film recommendation application in Python, processing a cleaned dataset of over 716,000 records to deliver highly personalised movie suggestions.",
+        "Architected a multi-dimensional scoring algorithm integrating 11 advanced intelligence methods, including TF-IDF-style keyword clustering, semantic pattern recognition, and adaptive genre weighting.",
+        "Designed and implemented a comprehensive performance testing framework to simulate synthetic user profiles, rigorously benchmarking algorithm accuracy across over 100 iterations.",
+        "Developed custom data cleansing pipelines and a persistent user profile storage system, ensuring robust data retrieval without reliance on external third-party dependencies."
+    ],
+      "tech_stack": [
+        "Python",
+        "CLI",
+        "TF-IDF",
+        "Data Cleansing",
+        "Automated Testing",
+        "CSV Data Pipelines"
+    ],
+      "github_url": "",
+      "live_url": "",
+      "image": ""
+    },
+    {
+      "title": "VideoPoster Mobile App",
+      "institution": "University of Leeds",
+      "description": "A prototype minimum viable product mobile application enabling users to watch, explore, and interact with posted videos.",
+      "bullets": [
+        "Developed a cross-platform prototype mobile application named 'VideoPoster' using the Qt framework to facilitate video sharing and playback.",
+        "Implemented an authentication system where logged-in users can securely upload their own videos from a local PC, whilst unauthenticated users can still browse the global feed.",
+        "Designed an intuitive user interface featuring interactive video playback controls, a dynamic heart-based interaction system, and a comprehensive user settings menu.",
+        "Collaborated within a four-person team to deliver the MVP, prioritising UX/UI improvements to gather early user feedback for future iterative development."
+      ],
+      "tech_stack": [
+        "Qt",
+        "Qt Creator",
+        "Git",
+        "C++"
+      ],
+      "github_url": "https://github.com/ArchieAbr/UserInterfaces.git",
+      "live_url": "",
+      "image": ""
+    },
+    {
+      "title": "Find the Discount Calculator",
+      "institution": "Personal Project",
+      "description": "A command-line Python application that calculates the final price of an item after applying a specified discount percentage.",
+      "bullets": [
+        "Developed a command-line utility in Python to accurately calculate discounted prices based on user-provided inputs.",
+        "Implemented robust error handling using try-except blocks to validate user input and ensure continuous program execution.",
+        "Engineered a recursive main loop allowing users to perform multiple calculations in a single session without restarting the application."
+      ],
+      "tech_stack": [
+        "Python",
+        "CLI"
+      ],
+      "github_url": "",
+      "live_url": "",
+      "image": ""
+    },
+    {
+      "title": "Internet Speed Tester",
+      "institution": "Personal Project",
+      "description": "A dual-interface application that measures network download speed, upload speed, and latency.",
+      "bullets": [
+        "Engineered an internet performance diagnostic tool using the speedtest-cli library to accurately measure download, upload, and ping metrics.",
+        "Developed a robust Command-Line Interface (CLI) version that automatically logs test results to a persistent CSV database and generates a formatted HTML summary report.",
+        "Architected a graphical user interface (GUI) iteration using Tkinter, implementing multi-threading to ensure the interface remains responsive during synchronous network testing operations."
+      ],
+      "tech_stack": [
+        "Python",
+        "Tkinter",
+        "speedtest-cli",
+        "Threading",
+        "CSV Data Pipelines",
+        "HTML"
+      ],
+      "github_url": "",
+      "live_url": "",
+      "image": ""
+    },
+    {
+      "title": "Pomodoro Timer",
+      "institution": "Personal Project",
+      "description": "A graphical productivity application designed to manage customisable study and break sessions.",
+      "bullets": [
+        "Built a cross-platform graphical user interface using Tkinter to capture custom study lengths, break intervals, and total session counts.",
+        "Programmed recursive countdown logic to seamlessly transition between study and break states whilst tracking overall session progress.",
+        "Integrated the Pygame library to deliver synchronous audio notifications upon the completion of each timed interval."
+      ],
+      "tech_stack": [
+        "Python",
+        "Tkinter",
+        "Pygame"
+      ],
+      "github_url": "",
+      "live_url": "",
       "image": ""
     }
   ],
