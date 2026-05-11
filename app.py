@@ -39,6 +39,12 @@ def education():
     return render_template("education.html", education=data["education"])
 
 
+@app.route("/contact")
+def contact():
+    """Renders the contact page with preferred contact channels."""
+    return render_template("contact.html")
+
+
 if __name__ == "__main__":
     # Development server only — use wsgi.py for production
     app.run(debug=True)
